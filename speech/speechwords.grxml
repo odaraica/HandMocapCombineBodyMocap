@@ -1,0 +1,35 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+    <rule id="rootRule">
+        <one-of>
+            <item>
+                <tag>RECORD_START</tag>
+                <one-of>
+                    <item> record </item>
+                    <item> recall </item>
+                    <item> start </item>
+                    <item> star </item>
+                </one-of>
+            </item>
+            <item>
+                <tag>RECORD_STOP</tag>
+                <one-of>
+                    <item> stop </item>
+                    <item> end </item>
+                </one-of>
+            </item>
+            <item>
+                <tag>PLAY</tag>
+                <one-of>
+                    <item> play </item>
+                    <item> playing </item>
+                </one-of>
+            </item>
+            <item>
+                <tag>RESET</tag>
+                <one-of>
+                    <item> reset </item>
+                </one-of>
+            </item>
+        </one-of>
+    </rule>
+</grammar>
